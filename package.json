@@ -1,0 +1,25 @@
+{
+  "name": "SM-16-4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kubkil/SM-16-4.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kubkil/SM-16-4/issues"
+  },
+  "homepage": "https://github.com/kubkil/SM-16-4#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "webpack-cli": "^2.0.15"
+  }
+}
