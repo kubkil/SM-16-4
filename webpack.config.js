@@ -2,6 +2,7 @@ const path = require('path');
 
 //webpack.config.js
 module.exports = {
+  mode: 'none',
   entry: './src/script.js',
   output: {
     path: path.resolve(__dirname, 'build'),
