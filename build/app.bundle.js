@@ -5348,7 +5348,7 @@ var App = function (_React$Component) {
       return _react2.default.createElement(
         'div',
         { className: _App2.default.TodoApp },
-        _react2.default.createElement(_Title2.default, { title: 'ToDo' })
+        _react2.default.createElement(_Title2.default, { title: 'ToDo', numberoftasks: this.state.data.length })
       );
     }
   }]);
@@ -6214,15 +6214,24 @@ var _Title2 = _interopRequireDefault(_Title);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 // nazwa zmiennej z dużej, małej?
+// const Title = props => <h1 className={style.appTitle}>{props.title}</h1>
+
+
 var Title = function Title(props) {
   return _react2.default.createElement(
     'h1',
     { className: _Title2.default.appTitle },
-    props.title
+    props.title,
+    _react2.default.createElement(
+      'p',
+      { className: _Title2.default.appNumberOfTasks },
+      'Ilo\u015B\u0107 zada\u0144 to: ',
+      props.numberoftasks
+    )
   );
 };
 
-exports.default = 'Title';
+exports.default = Title;
 
 /***/ }),
 /* 34 */
@@ -6258,11 +6267,12 @@ exports = module.exports = __webpack_require__(30)(false);
 
 
 // module
-exports.push([module.i, "._2D5aAxU4NSx7iXIJ1CNl-k {\r\n  color: blue;\r\n  text-transform: uppercase;\r\n  text-align: center;\r\n}", ""]);
+exports.push([module.i, "._2D5aAxU4NSx7iXIJ1CNl-k {\r\n  color: blue;\r\n  text-transform: uppercase;\r\n  text-align: center;\r\n}\r\n\r\n._2_6Sa7aKMb8_bVDcQT8bA5 {\r\n  color: black;\r\n  text-transform: uppercase;\r\n  text-align: center;\r\n}", ""]);
 
 // exports
 exports.locals = {
-	"appTitle": "_2D5aAxU4NSx7iXIJ1CNl-k"
+	"appTitle": "_2D5aAxU4NSx7iXIJ1CNl-k",
+	"appNumberOfTasks": "_2_6Sa7aKMb8_bVDcQT8bA5"
 };
 
 /***/ })
