@@ -6213,15 +6213,16 @@ var _Title2 = _interopRequireDefault(_Title);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-// nazwa zmiennej z dużej, małej?
-// const Title = props => <h1 className={style.appTitle}>{props.title}</h1>
-
-
+// props w nawiasie? chyba bez różnicy
 var Title = function Title(props) {
   return _react2.default.createElement(
-    'h1',
-    { className: _Title2.default.appTitle },
-    props.title,
+    'div',
+    null,
+    _react2.default.createElement(
+      'h1',
+      { className: _Title2.default.appTitle },
+      props.title
+    ),
     _react2.default.createElement(
       'p',
       { className: _Title2.default.appNumberOfTasks },
