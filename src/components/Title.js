@@ -1,11 +1,8 @@
 import React from 'react';
 import style from '../../styles/Title.css';
 
-// nazwa zmiennej z dużej, małej?
-// const Title = props => <h1 className={style.appTitle}>{props.title}</h1>
-
-
-const Title = (props) => (
+// props w nawiasie? chyba bez różnicy
+const Title = props => (
   <h1 className={style.appTitle}>{props.title}
     <p className={style.appNumberOfTasks}>Ilość zadań to: {props.numberoftasks}</p>
   </h1>
