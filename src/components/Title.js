@@ -5,10 +5,10 @@ import style from '../../styles/Title.css';
 // const Title = props => <h1 className={style.appTitle}>{props.title}</h1>
 
 
-const Title = ({title, numberoftasks}) => (
+const Title = (title, numberoftasks) => (
   <h1 className={style.appTitle}>{props.title}>
-    <p className={style.appNumberOfTasks}>{props.numberoftasks}</p>
+    <p className={style.appNumberOfTasks}>Ilość zadań to: {props.numberoftasks}</p>
   </h1>
 )
 
-export default 'Title';
+export default Title;
